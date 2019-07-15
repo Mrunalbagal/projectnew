@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>House</title>
+</head>
+
+<body>
+    <div class="row top">
+        <div class="col-sm-2">
+            <img src="2000px-Seal_of_the_United_States_Congress.png" alt="congress logo" Width="120px" height="120px">
+        </div>
+        <div class="col-sm-8">
+            <a class="display-1 font-weight-bold" href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment">TGIF</a>
+        </div>
+        <div class="col-sm-2">
+            <img src="brief-symbol-png-2.png" alt="congress logo" Width="25px" height="28px" padding="28px">
+            <a href="mailto:info@tgif.net">info@tgif.net</a></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-dark text-white bg-dark">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="home.html">home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">113 Congress</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item active" href="#">House</a>
+                            <a class="dropdown-item" href="senate-data.html">Senate</a>
+                        </div>
+                    </li>
+                       <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+							Attendance
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="house-attendance.html">House</a>
+							<a class="dropdown-item" href="senate-attendance.html">Senate</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+							Party Loyalty
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="house-loyalty.html">House</a>
+							<a class="dropdown-item" href="senate-loyalty.html">Senate</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row row-margins">
+        <div class="col-sm-8">
+            <h2>Congressmen</h2>
+            <p>The major power of the House is to pass federal legislation that affects the entire country, although its bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no majority in the Electoral College.</p>
+            <p>Each U.S. state is represented in the House in proportion to its population as measured in the census, but every state is entitled to at least one representative. </p>
+            </div>
+            <div class="col-sm-4">
+            <img src="2000px-Seal_of_the_United_States_House_of_Representatives.svg.png" class="img-fluid" alt="Responsive image">
+        </div>
+        </div>
+    
+
+    <div class="row">
+        <div class="col-sm-5 ml-5 mb-2">
+
+            <span>Filter by Party: </span>
+            <label><input type="checkbox" name="party" value="R" onchange="getChecked()" />Republican</label>
+            &nbsp;&nbsp;&nbsp;
+            <label><input type="checkbox" name="party" value="D" onchange="getChecked()" />Democrat</label>
+            &nbsp;&nbsp;&nbsp;
+            <label><input type="checkbox" name="party" value="I" onchange="getChecked()" />Independent</label>
+        </div>
+        <div class="col-sm-3">
+            <span></span>
+            <label>Filter by State&#58;
+                <select id="filter_state" name="filter_by_state" onchange="getChecked()">
+                    <option value="">Please select...</option>
+                </select>
+            </label>
+        </div>
+    </div>
+ 
+            <div class="row">
+                <div class="col-sm-12">
+			<table class="table  table-striped">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Name</th>
+						<th scope="col">Party Affilication</th>
+						<th scope="col">State</th>
+						<th scope="col">Seniority</th>
+						<th scope="col">percentage of votes</th>
+					</tr>
+				</thead>
+				<tbody id="members-data">
+				</tbody>
+			</table>
+		</div>
+            </div>
+    <div class="row border border-dark">
+        <div class="col">
+            <p class="text-center RIGHTS">© 2016 TGIF | All Rights Reserved</p>
+        </div>
+    </div>
+    <script src="pro-congress-113-house.js"></script>
+    <script src="main_1.js"></script>
+    
+    
+</body>
+</html>

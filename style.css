@@ -1,0 +1,65 @@
+th,
+td,
+p,
+input {
+    font: 14px Verdana;
+}
+
+table,
+th,
+td {
+    border: solid black: 2px #DDD;
+    border-collapse: collapse;
+    padding: 2px 10px;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+}
+
+tr:nth-child(even) td {
+    background: #f18973
+}
+
+table {
+    border-collapse: collapse;
+    align-content: center;
+}
+
+table td,
+table th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table thead {
+    background: #ccc;
+}
+
+.top {
+    margin: 20px 0 20px 0;
+}
+.TGIF-head {
+    font-size: 50px;
+    color
+}
+.RIGHTS {
+    padding-top: 18px;
+}
+.row-margins {
+    padding:  0 0 50px 10px;
+}
+.learn-more {
+    border-style: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.learn-more:hover {
+    cursor: pointer;
+    font-size: 20px;
+}
+#senate-data {
+	border-collapse: collapse;
+	width: 100%;
+}

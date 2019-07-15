@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Senate Loyalty</title>
+</head>
+
+<body>
+    <div class="row top">
+        <div class="col-sm-2">
+            <img src="2000px-Seal_of_the_United_States_Congress.png" alt="congress logo" Width="120px" height="120px">
+        </div>
+        <div class="col-sm-8">
+            <a class="display-1 font-weight-bold" href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment">TGIF</a>
+        </div>
+        <div class="col-sm-2">
+            <img src="brief-symbol-png-2.png" alt="congress logo" Width="25px" height="28px" padding="28px" padding-bottom="10px">
+            <a href="mailto:info@tgif.net">info@tgif.net</a></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="home.html">home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                            Congress 113
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="house-data.html">House</a>
+                            <a class="dropdown-item" href="senate-data.html">Senate</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                            Attendance
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="house-attendance.html">House</a>
+                            <a class="dropdown-item" href="senate-attendance.html">Senate</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                            Party Loyalty
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="house-loyalty.html">House</a>
+                            <a class="dropdown-item active" href="senate-loyalty.html">Senate</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row row-margins">
+        <div class="col-sm-6">
+            <h2>Party Loyalty</h2>
+            <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
+        </div>
+
+        <div class="col-sm-6">
+            <h2>Senate at a glance</h2>
+            <table class="w-10 table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Party</th>
+                        <th scope="col">Number of Reps</th>
+                        <th scope="col">% Voted with Prty</th>
+                    </tr>
+                </thead>
+                <tbody id="table_glance">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Least Loyal (Bottom 10% of Party)</h2>
+            <table class="w-10 table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Number Party Votes</th>
+                        <th scope="col">% Party Votes</th>
+                    </tr>
+                </thead>
+                <tbody id="table_least_loyal">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-6">
+            <h2>Most Loyal (Top 10% of Party)</h2>
+            <table class="w-10 table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Number Party Votes</th>
+                        <th scope="col">% Party Votes</th>
+                    </tr>
+                </thead>
+                <tbody id="table_most_loyal">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class=row>
+        <div class="col-sm-12">
+            <div class="text-center align-middle">
+                <p class="footer mt-3 p-2 rounded">&copy;2016TGIF &#124; All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <script src="pro-congress-113-senate.js"></script>
+    <script src="main_2.js"></script>
+    </body>
+</html>
